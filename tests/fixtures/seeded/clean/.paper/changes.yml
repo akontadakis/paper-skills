@@ -1,0 +1,44 @@
+version: 1
+updated: "2026-11-10"
+manuscript: "manuscript.tex"
+decision: major_revision
+round: 1
+submitted: "2026-08-03"
+decision_received: "2026-10-20"
+response_sent: null
+
+comments:
+  - id: R1.1
+    reviewer: 1
+    comment: "The conclusion is too broad for one orientation."
+    type: claim
+    severity: blocking
+    decision: concede
+    reason: null
+    done_when: "The Abstract and the Conclusion each name the four climates and the south orientation."
+    manuscript_change: "Bounded the Abstract and Conclusion to the simulated climates and orientation."
+    location: ["Abstract L6", "Conclusion L1"]
+    affects_claims: ["C1"]
+    affects_figures: []
+    status: done
+    verified_on: "2026-11-10"
+    response_paragraph: "R1.1"
+
+  - id: R1.2
+    reviewer: 1
+    comment: "Add a north-facing case."
+    type: evidence
+    severity: substantive
+    decision: contest
+    reason: "A north window does not trigger the glare-led controller, so the comparison would have no treatment."
+    manuscript_change: null
+    location: []
+    affects_claims: []
+    affects_figures: []
+    status: waived
+    waived_by: "corresponding author, 2026-11-09"
+    waived_risk: "Reviewer 1 may repeat the request in round two."
+    flagged_to_editor: true
+    response_paragraph: "R1.2"
+
+conflicts: []

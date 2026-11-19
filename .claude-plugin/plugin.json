@@ -1,0 +1,18 @@
+{
+  "name": "paper-skills",
+  "version": "2.0.0",
+  "description": "Three skills for a research paper: design the study, write the paper, answer the reviewers. With auditor agents that never edit the manuscript, and check scripts.",
+  "author": {
+    "name": "Antonis Kontadakis"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/akontadakis/paper-skills",
+  "skills": [
+    "./research-study-design",
+    "./research-paper-writing",
+    "./responding-to-reviewers"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

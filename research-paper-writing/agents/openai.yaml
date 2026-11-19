@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Paper Writing"
+  short_description: "Draft, revise, check and submit a paper: claim ledger, references, review and Submission Gate"
+  default_prompt: "Use $research-paper-writing to improve my paper's structure, flow, and section writing quality."

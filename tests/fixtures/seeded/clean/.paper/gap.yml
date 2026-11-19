@@ -1,0 +1,28 @@
+version: 1
+updated: "2026-11-15"
+
+gaps:
+  - id: G1
+    statement: "The effect of a glare-led shading controller on core daylight has not been evaluated across climates."
+    type: partial
+    status: verified
+    rounds_run: [1, 2, 3]
+    adjacent_fields_searched: ["lighting controls", "occupant comfort"]
+    evidence:
+      - cite: "Okafor 2020"
+        page: "58"
+        quote: "no study in the corpus reported core illuminance under automated shading"
+      - cite: "Lindqvist 2018"
+        page: "112"
+        quote: "the evaluated controllers were judged at the window zone only"
+      - cite: "Haruna 2022"
+        page: "9"
+        quote: "core workstations were outside the measured area"
+    dissenting_studies: []
+    linked_claims: ["C1"]
+    search:
+      databases: ["OpenAlex", "Crossref", "Semantic Scholar"]
+      date_range: "2010 to 2026"
+      searched_on: "2026-08-19"
+      sentinels_found: "3 of 3"
+      tracking_rounds: "2 rounds; new included records per round: 1, 0"

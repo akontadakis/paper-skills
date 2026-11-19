@@ -1,0 +1,24 @@
+version: 1
+manuscript: "manuscript.tex"
+updated: "2026-11-15"
+
+claims:
+  - id: C1
+    text: "A glare-led shading controller raises core illuminance and spatial daylight autonomy in a side-lit office, without raising glare at the perimeter seat."
+    location: ["Abstract L4", "Discussion L1", "Conclusion L1"]
+    status: supported
+    evidence:
+      - "Fig. 2"
+      - "Table 1"
+    verb: "indicates"
+    risk: "Holds only for the simulated climates and orientation."
+    load_bearing: true
+
+  - id: C2
+    text: "The 0.5 m analysis grid does not bias the reported sDA."
+    location: ["Methods L4"]
+    status: needs evidence
+    evidence: []
+    verb: "shows"
+    gap_reason: "No grid-convergence test was run, and the simulation allocation has ended, so none can be produced for this paper. Stated as a limitation in the Discussion."
+    load_bearing: false
