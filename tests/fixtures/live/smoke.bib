@@ -1,0 +1,52 @@
+% Real, well-known records for one manual live run of `bib_check.py --online`.
+% Not used by the unit tests, which never touch the network.
+@article{lecun2015,
+  author  = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  title   = {Deep learning},
+  journal = {Nature},
+  year    = {2015},
+  volume  = {521},
+  pages   = {436--444},
+  doi     = {10.1038/nature14539}
+}
+
+% Retracted in 2010. The entry should draw a retraction notice.
+@article{wakefield1998,
+  author  = {Wakefield, A. J. and others},
+  title   = {Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children},
+  journal = {The Lancet},
+  year    = {1998},
+  volume  = {351},
+  pages   = {637--641},
+  doi     = {10.1016/S0140-6736(97)11096-0}
+}
+
+% A DataCite DOI. It must resolve even though Crossref does not hold it.
+@misc{vaswani2017,
+  author = {Vaswani, Ashish and others},
+  title  = {Attention Is All You Need},
+  year   = {2017},
+  doi    = {10.48550/arXiv.1706.03762}
+}
+
+% A real DOI under a wrong title and author. It should draw an identity mismatch.
+@article{wrongtitle2015,
+  author  = {Example, Erin},
+  title   = {Glare control in side-lit classrooms},
+  journal = {Nature},
+  year    = {2015},
+  volume  = {521},
+  pages   = {436--444},
+  doi     = {https://doi.org/10.1038/NATURE14539}
+}
+
+% A DOI that is not registered.
+@article{ghost2021,
+  author  = {Ghost, Gil},
+  title   = {A paper that does not exist},
+  journal = {Journal of Synthetic Building Studies},
+  year    = {2021},
+  volume  = {1},
+  pages   = {1--2},
+  doi     = {10.5555/jsbs.2021.0142}
+}

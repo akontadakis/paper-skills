@@ -1,0 +1,36 @@
+version: 1
+updated: "2026-11-15"
+
+figures:
+  - id: "Fig1"
+    kind: figure
+    file: "figs/plan.pdf"
+    source: "manual"
+    caption_gist: "Plan of the simulated office, with the core zone shaded."
+    key_numbers: []
+    supports_claims: []
+    cited_in: ["Sec. 2"]
+    status: final
+
+  - id: "Fig2"
+    kind: figure
+    file: "figs/core.pdf"
+    source: "scripts/plot_core.py"
+    caption_gist: "Mean core illuminance by shading mode, averaged over four climates."
+    key_numbers:
+      - "core illuminance 215 lx with the controller, 148 lx with fixed blinds"
+    supports_claims: ["C1"]
+    cited_in: ["Sec. 3"]
+    status: final
+
+  - id: "Tab1"
+    kind: table
+    file: "inline"
+    source: "scripts/area_metrics.py"
+    caption_gist: "Area and glare metrics by shading mode."
+    key_numbers:
+      - "sDA 41 % with fixed blinds, 58 % with the controller"
+      - "DGP 0.38 with fixed blinds, 0.29 with the controller"
+    supports_claims: ["C1"]
+    cited_in: ["Sec. 3"]
+    status: final

@@ -1,0 +1,86 @@
+% Synthetic test manuscript. The study, the numbers, and the references are invented.
+\documentclass{article}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\begin{document}
+
+\title{Shading control and core daylight in a side-lit office: a simulation study}
+\maketitle
+
+\begin{abstract}
+Automated shading is often set to limit glare at the window, and its effect on daylight
+at the building core is rarely reported. This simulation study compared a glare-led
+shading controller with fixed blinds in a side-lit office. With the controller, mean
+work-plane illuminance at the core was \SI{212}{\lux}, against \SI{148}{\lux} with fixed
+blinds. Spatial daylight autonomy rose from 41\,\% to 58\,\%. The result holds for all climates and orientations.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+Shading controllers in offices are usually tuned at the perimeter, where glare
+complaints arise \cite{smith2021,lee2022}. DGP is the usual glare criterion at the perimeter. Core workstations receive what daylight is
+left. To our knowledge, based on a search of OpenAlex, Crossref, and Semantic Scholar
+for 2010 to 2026, last run on 19 August 2026, the effect of a glare-led controller on
+core daylight has not been evaluated across climates \cite{okafor2020,nowak2019}. This study asks whether such a controller changes daylight at the
+core of a side-lit office.
+
+\section{Methods}
+\label{sec:methods}
+The office is \SI{6}{\metre} wide and \SI{9}{\metre} deep, with one south window
+(Fig.~\ref{fig:plan}). Work-plane illuminance was computed with Radiance~5.4 on a grid
+of \SI{0.5}{\metre} at a height of \SI{0.8}{\metre}, with 5 ambient bounces. Four
+climates were simulated with typical meteorological year files \cite{cen2019}. Spatial
+daylight autonomy (sDA) is the share of the floor area that reaches \SI{300}{\lux} for
+at least half of the occupied hours. Daylight glare probability (DGP) was computed at
+the perimeter seat. The controller lowers the blind when window luminance exceeds
+\SI{2000}{\lux}. The core is the floor area beyond \SI{6}{\metre}
+from the window.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{figs/plan.pdf}
+  \caption{Plan of the simulated office, with the core zone shaded.}
+  \label{fig:plan}
+\end{figure}
+
+\section{Results}
+\label{sec:results}
+Mean core illuminance was \SI{215}{\lux} with the controller and \SI{148}{\lux} with
+fixed blinds (Fig.~\ref{fig:core}; see also Fig.~\ref{fig:missing}). Table~\ref{tab:sda} gives the area metrics. sDA was
+41\,\% with fixed blinds and 58\,\% with the controller. DGP at the perimeter seat was
+0.38 with fixed blinds and 0.31 with the controller.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{figs/core.pdf}
+  \caption{Mean core illuminance by shading mode, averaged over four climates.}
+  \label{fig:core}
+\end{figure}
+
+\begin{table}
+  \caption{Area and glare metrics by shading mode.}
+  \label{tab:sda}
+  \centering
+  \begin{tabular}{lcc}
+    Mode & sDA & DGP \\
+    Fixed blinds & 41\,\% & 0.38 \\
+    Controller & 58\,\% & 0.31 \\
+  \end{tabular}
+\end{table}
+
+\section{Discussion}
+\label{sec:discussion}
+The controller raised core illuminance from \SI{148}{\lux} to \SI{215}{\lux} while DGP
+at the perimeter fell. This indicates that glare control and core daylight need not
+trade off in this geometry. The finding is limited to four climates, one orientation,
+and one room depth. The grid spacing was not tested for convergence, and the reported
+sDA may shift with a finer grid.
+
+\section{Conclusion}
+\label{sec:conclusion}
+In the simulated office, a glare-led shading controller raised sDA from 41\,\% to
+58\,\% in the four climates and the south orientation studied, for one room depth.
+
+\bibliographystyle{plain}
+\bibliography{refs}
+\end{document}

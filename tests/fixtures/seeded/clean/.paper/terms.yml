@@ -1,0 +1,21 @@
+version: 1
+updated: "2026-11-15"
+
+terms:
+  - canonical: "spatial daylight autonomy"
+    abbrev: "sDA"
+    defined_at: "Sec. 2"
+    unit: "%"
+    symbol: null
+    never_use: ["daylight autonomy fraction", "spatial autonomy"]
+    note: "One metric, one name."
+
+  - canonical: "daylight glare probability"
+    abbrev: "DGP"
+    defined_at: "Sec. 2"
+    unit: null
+    symbol: null
+    never_use: ["glare index", "glare probability index"]
+    note: "A different metric from the glare indices in older literature."
+
+symbols: []

@@ -1,0 +1,14 @@
+{
+  "name": "paper-skills-marketplace",
+  "description": "Skills for designing a study, writing the paper and answering reviewers.",
+  "owner": {
+    "name": "Antonis Kontadakis"
+  },
+  "plugins": [
+    {
+      "name": "paper-skills",
+      "source": "./",
+      "description": "Three skills for a research paper: design the study, write the paper, answer the reviewers. With auditor agents that never edit the manuscript, and check scripts."
+    }
+  ]
+}

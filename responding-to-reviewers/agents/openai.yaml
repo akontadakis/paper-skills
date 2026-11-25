@@ -1,0 +1,4 @@
+interface:
+  display_name: "Responding to Reviewers"
+  short_description: "Triage reviewer comments, track each change, and write the response or rebuttal"
+  default_prompt: "Use $responding-to-reviewers to triage my reviewer comments and draft the point-by-point response."

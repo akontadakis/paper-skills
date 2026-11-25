@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Study Design"
+  short_description: "Research question, study design and run records before the results exist"
+  default_prompt: "Use $research-study-design to sharpen my research question and design the study before I run it."
